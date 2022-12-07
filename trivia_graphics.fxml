@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.228643216080402" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TriviaController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <Label fx:id="main_label" layoutX="14.0" layoutY="31.0" text="top text">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="786.0" layoutY="16.0" text="Score:" />
+            <Label fx:id="score" layoutX="823.0" layoutY="16.0" text="score_value" />
+            <Button layoutX="814.0" layoutY="48.0" mnemonicParsing="false" onAction="#endPressed" text="end game" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="597.0">
+         <children>
+            <Button fx:id="button_a" layoutX="14.0" layoutY="64.0" mnemonicParsing="false" onAction="#aPressed" prefHeight="50.0" prefWidth="200.0" text="Button" />
+            <Button fx:id="button_b" layoutX="684.0" layoutY="64.0" mnemonicParsing="false" onAction="#bPressed" prefHeight="50.0" prefWidth="200.0" text="Button" />
+            <Button fx:id="button_c" layoutX="14.0" layoutY="205.0" mnemonicParsing="false" onAction="#cPressed" prefHeight="50.0" prefWidth="200.0" text="Button" />
+            <Button fx:id="button_d" layoutX="684.0" layoutY="205.0" mnemonicParsing="false" onAction="#dPressed" prefHeight="50.0" prefWidth="200.0" text="Button" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
